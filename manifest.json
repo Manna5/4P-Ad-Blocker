@@ -1,0 +1,12 @@
+{
+ "manifest_version":2,
+ "name":"4programmers.net Ad Blocker",
+ "version":"1.0beta",
+ "description":"Block microblog ads pn 4programmers.net",
+ "content_scripts":[
+  {
+   "matches":["*://*.4programmers.net/*"],
+   "js":["main.js"]
+  }
+ ]
+}
