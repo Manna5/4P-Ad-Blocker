@@ -1,12 +1,12 @@
 function removeAdsFrom(adMaker){
- var microblogEntries=document.querySelectorAll("div.card-body");
- for(var i=0;i<microblogEntries.length;i++){
-  var mbEntry=microblogEntries[i];
-  var adMakerHTML="alt=\""+adMaker+"\" class=\"d-block mw-100\"";
-  if(mbEntry.innerHTML.indexOf(adMakerHTML)>=0){
-   mbEntry.style.display="none";
+  var allMicroblogEntries=document.querySelectorAll("div.card-body");
+  for(var i=0;i<allMicroblogEntries.length;i++){
+    var microblogEntry=allMicroblogEntries[i];
+    var adMakerHTML="alt=\""+adMaker+"\" class=\"d-block mw-100\"";
+    if(microblogEntry.innerHTML.indexOf(adMakerHTML)>=0){
+      microblogEntry.style.display="none";
+    }
   }
- }
 }
 
 //Add more ad makers (or users that you do not like) here
